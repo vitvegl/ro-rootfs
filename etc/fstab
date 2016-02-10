@@ -1,0 +1,9 @@
+/dev/sda2 /boot ext2 ro,nodev,nosuid,noexec 0 2
+/dev/mapper/system-1sw none swap sw 0 0
+/dev/mapper/system-2rootfs / ext4 ro 0 1
+/dev/mapper/system-3opt /opt ext4 nodev,nosuid 0 1
+/dev/mapper/system-4var /var ext4 nodev,nosuid,noexec 0 2
+/dev/mapper/system-5home /home ext4 nodev,nosuid,noexec 0 0
+/dev/mapper/system-6data /data ext4 nodev,nosuid 0 0
+tmpfs /tmp tmpfs nodev,nosuid,noexec 0 0
+tmpfs /media tmpfs mode=0711,nodev,nosuid,noexec 0 0
